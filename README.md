@@ -11,9 +11,9 @@
 
 ### **0x01-introduction**
 
-`Team project to build a clone of [AirBnB](https://www.airbnb.com/).`
-`The console is a command interpreter to manage objects abstraction between objects and how they are stored.`
-`The console will perform the following tasks:`
+`Team project to build a clone of [AirBnB](https://www.airbnb.com/).
+The console is a command interpreter to manage objects abstraction between objects and how they are stored.
+The console will perform the following tasks:`
 
 ~~~~
 * create a new object
