@@ -34,7 +34,57 @@ All the development and testing was runned over an operating system Ubuntu 20.04
 
 
 ### **0x03-installation**
+```bash
+git clone https://github.com/aysuarex/AirBnB_clone.git
+```
 
+change to the `AirBnb` directory and run the command:
+
+```bash
+ ./console.py
+```
+
+### Execution
+
+In interactive mode
+
+```bash
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb)
+(hbnb)
+(hbnb) quit
+$
+```
+
+in Non-interactive mode
+
+```bash
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb)
+$
+```
 
 
 
