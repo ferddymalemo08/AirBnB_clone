@@ -38,4 +38,5 @@
 
 
 ### **0x06-authors**
-
+Ferdinand Malemo <ferddymalemo08@yahoo.com>
+Joy Gitau <joygitau98@gmail.com>
