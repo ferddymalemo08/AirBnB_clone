@@ -13,20 +13,20 @@ class BaseModel:
         Args:
             *args (any): Unused.
             **kwargs (dict): Key/value pairs of attributes.
-    """
-    tformat = "%Y-%m-%dT%H:%M:%S.%f"
-    self.id = str(uuid4())
-    self.created_at = datetime.today()
-    self.updated_at = datetime.today()
+        """
+        tformat = "%Y-%m-%dT%H:%M:%S.%f"
+        self.id = str(uuid4())
+        self.created_at = datetime.today()
+        self.updated_at = datetime.today()
 
-    if len(kwargs) != 0:
-        for k, v in kwargs.items():
-            if k == "created_at" or k == "updated_at":
-                self.__dict__[k] = datetime.strptime(v, tformat)
-            else:
-                self.__dict__[k] = v
-    else:
-        models.storage.new(self)
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
+                if k == "created_at" or k == "updated_at":
+                    self.__dict__[k] = datetime.strptime(v, tformat)
+                else:
+                    self.__dict__[k] = v
+        else:
+            models.storage.new(self)
 
     def save(self):
         """Update updated_at with the current datetime."""
@@ -35,7 +35,7 @@ class BaseModel:
 
     def to_dict(self):
         """Return the dictionary of the BaseModel instance.
-        Include the key/value pair __class__ representing
+        Includes the key/value pair __class__ representing
         the class name of the object.
         """
         ourdict = self.__dict__.copy()
